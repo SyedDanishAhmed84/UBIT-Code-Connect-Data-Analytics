@@ -1,0 +1,12 @@
+relationship,parent_table,parent_key,child_table,child_key,child_total_records,child_null_or_empty_keys,child_orphan_records,unique_orphan_keys,parents_without_children,expected_cardinality,observed_max_child_per_parent,status
+orders.customer_id -> customers.customer_id,customers,customer_id,orders,customer_id,163200,0,330,315,11559,1:N,158,ORPHAN_KEYS_DETECTED
+order_items.order_id -> orders.order_id,orders,order_id,order_items,order_id,315143,0,0,0,0,1:N,8,PASSED
+order_items.product_id -> products.product_id,products,product_id,order_items,product_id,315143,0,932,888,2,1:N,1754,ORPHAN_KEYS_DETECTED
+order_items.seller_id -> sellers.seller_id,sellers,seller_id,order_items,seller_id,315143,0,0,0,13,1:N,8165,PASSED
+products.seller_id -> sellers.seller_id,sellers,seller_id,products,seller_id,3200,0,0,0,13,1:N,51,PASSED
+orders.ship_city_id -> locations.city_id,locations,city_id,orders,ship_city_id,163200,6516,0,0,0,1:N,28706,PASSED
+customers.city_id -> locations.city_id,locations,city_id,customers,city_id,45000,2233,0,0,0,1:N,7828,PASSED
+sellers.city_id -> locations.city_id,locations,city_id,sellers,city_id,420,0,0,0,544,1:N,83,PASSED
+payments.order_id -> orders.order_id,orders,order_id,payments,order_id,168111,0,0,0,0,1:N (Multiple payments),4,PASSED
+shipping.order_id -> orders.order_id,orders,order_id,shipping,order_id,151228,0,0,0,8948,1:1,1,PASSED
+returns.order_item_id -> order_items.order_item_id,order_items,order_item_id,returns,order_item_id,16048,0,139,139,299234,1:1,1,ORPHAN_KEYS_DETECTED

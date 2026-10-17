@@ -1,0 +1,65 @@
+table_name,column_name,total_rows,unique_values,duplicate_values_count,missing_count,is_unique_candidate_key,hypothesis
+customers,customer_id,45000,45000,0,0,True,Primary Key Candidate
+customers,full_name,45000,3463,41537,0,False,Foreign Key / Non-Unique Attribute
+customers,email,45000,42752,2248,1698,False,Foreign Key / Non-Unique Attribute
+customers,phone,45000,40860,4140,3599,False,Foreign Key / Non-Unique Attribute
+customers,gender,45000,9,44991,2199,False,Foreign Key / Non-Unique Attribute
+customers,registration_date,45000,2501,42499,0,False,Foreign Key / Non-Unique Attribute
+customers,city_id,45000,651,44349,2233,False,Foreign Key / Non-Unique Attribute
+customers,birth_year,45000,51,44949,4600,False,Foreign Key / Non-Unique Attribute
+locations,city_id,650,650,0,0,True,Primary Key Candidate
+locations,city,650,650,0,0,True,Primary Key Candidate
+locations,province,650,22,628,25,False,Foreign Key / Non-Unique Attribute
+locations,region,650,3,647,0,False,Foreign Key / Non-Unique Attribute
+locations,latitude,650,616,34,33,False,Foreign Key / Non-Unique Attribute
+locations,longitude,650,616,34,31,False,Foreign Key / Non-Unique Attribute
+locations,population_tier,650,3,647,0,False,Foreign Key / Non-Unique Attribute
+order_items,order_item_id,315143,315143,0,0,True,Primary Key Candidate
+order_items,order_id,315143,160000,155143,0,False,Foreign Key / Non-Unique Attribute
+order_items,product_id,315143,4086,311057,0,False,Foreign Key / Non-Unique Attribute
+order_items,seller_id,315143,407,314736,0,False,Foreign Key / Non-Unique Attribute
+order_items,quantity,315143,24,315119,0,False,Foreign Key / Non-Unique Attribute
+order_items,unit_price,315143,21868,293275,0,False,Foreign Key / Non-Unique Attribute
+order_items,discount_amount,315143,7557,307586,31567,False,Foreign Key / Non-Unique Attribute
+orders,order_id,163200,160000,3200,0,False,Foreign Key / Non-Unique Attribute
+orders,customer_id,163200,33756,129444,0,False,Foreign Key / Non-Unique Attribute
+orders,order_date,163200,2008,161192,0,False,Foreign Key / Non-Unique Attribute
+orders,order_status,163200,20,163180,0,False,Foreign Key / Non-Unique Attribute
+orders,ship_city_id,163200,651,162549,6516,False,Foreign Key / Non-Unique Attribute
+orders,order_total,163200,32728,130472,0,False,Foreign Key / Non-Unique Attribute
+orders,discount_code,163200,33,163167,112059,False,Foreign Key / Non-Unique Attribute
+orders,channel,163200,12,163188,0,False,Foreign Key / Non-Unique Attribute
+payments,payment_id,168111,164815,3296,0,False,Foreign Key / Non-Unique Attribute
+payments,order_id,168111,160000,8111,0,False,Foreign Key / Non-Unique Attribute
+payments,payment_method,168111,22,168089,0,False,Foreign Key / Non-Unique Attribute
+payments,payment_status,168111,17,168094,0,False,Foreign Key / Non-Unique Attribute
+payments,amount,168111,33179,134932,0,False,Foreign Key / Non-Unique Attribute
+payments,payment_date,168111,1687,166424,5017,False,Foreign Key / Non-Unique Attribute
+products,product_id,3200,3200,0,0,True,Primary Key Candidate
+products,product_name,3200,3176,24,0,False,Foreign Key / Non-Unique Attribute
+products,category,3200,74,3126,0,False,Foreign Key / Non-Unique Attribute
+products,sub_category,3200,37,3163,485,False,Foreign Key / Non-Unique Attribute
+products,brand,3200,17,3183,392,False,Foreign Key / Non-Unique Attribute
+products,list_price,3200,970,2230,0,False,Foreign Key / Non-Unique Attribute
+products,cost_price,3200,1878,1322,170,False,Foreign Key / Non-Unique Attribute
+products,weight_kg,3200,473,2727,296,False,Foreign Key / Non-Unique Attribute
+products,seller_id,3200,407,2793,0,False,Foreign Key / Non-Unique Attribute
+returns,return_id,16048,16048,0,0,True,Primary Key Candidate
+returns,order_item_id,16048,16048,0,0,True,Primary Key Candidate
+returns,return_date,16048,1510,14538,0,False,Foreign Key / Non-Unique Attribute
+returns,return_reason,16048,38,16010,2390,False,Foreign Key / Non-Unique Attribute
+returns,return_status,16048,10,16038,0,False,Foreign Key / Non-Unique Attribute
+returns,refund_amount,16048,6958,9090,0,False,Foreign Key / Non-Unique Attribute
+sellers,seller_id,420,420,0,0,True,Primary Key Candidate
+sellers,seller_name,420,415,5,0,False,Foreign Key / Non-Unique Attribute
+sellers,join_date,420,358,62,34,False,Foreign Key / Non-Unique Attribute
+sellers,seller_tier,420,11,409,22,False,Foreign Key / Non-Unique Attribute
+sellers,city_id,420,106,314,0,False,Foreign Key / Non-Unique Attribute
+sellers,rating,420,26,394,33,False,Foreign Key / Non-Unique Attribute
+shipping,shipment_id,151228,151228,0,0,True,Primary Key Candidate
+shipping,order_id,151228,151228,0,0,True,Primary Key Candidate
+shipping,courier,151228,22,151206,0,False,Foreign Key / Non-Unique Attribute
+shipping,shipped_date,151228,1658,149570,5943,False,Foreign Key / Non-Unique Attribute
+shipping,delivered_date,151228,1689,149539,18841,False,Foreign Key / Non-Unique Attribute
+shipping,shipping_fee,151228,2964,148264,9145,False,Foreign Key / Non-Unique Attribute
+shipping,delivery_status,151228,15,151213,0,False,Foreign Key / Non-Unique Attribute

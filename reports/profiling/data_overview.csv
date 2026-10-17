@@ -1,0 +1,10 @@
+table_name,filename,row_count,column_count,column_names,file_size_bytes
+customers,customers.csv,45000,8,"customer_id, full_name, email, phone, gender, registration_date, city_id, birth_year",3637576
+locations,locations.csv,650,7,"city_id, city, province, region, latitude, longitude, population_tier",33979
+order_items,order_items.csv,315143,7,"order_item_id, order_id, product_id, seller_id, quantity, unit_price, discount_amount",13391892
+orders,orders.csv,163200,8,"order_id, customer_id, order_date, order_status, ship_city_id, order_total, discount_code, channel",9058298
+payments,payments.csv,168111,6,"payment_id, order_id, payment_method, payment_status, amount, payment_date",8433846
+products,products.csv,3200,9,"product_id, product_name, category, sub_category, brand, list_price, cost_price, weight_kg, seller_id",278210
+returns,returns.csv,16048,6,"return_id, order_item_id, return_date, return_reason, return_status, refund_amount",905832
+sellers,sellers.csv,420,6,"seller_id, seller_name, join_date, seller_tier, city_id, rating",20095
+shipping,shipping.csv,151228,7,"shipment_id, order_id, courier, shipped_date, delivered_date, shipping_fee, delivery_status",9185211

@@ -1,0 +1,10 @@
+table_name,total_rows,exact_duplicate_rows,exact_duplicate_pct
+customers,45000,0,0.0
+locations,650,0,0.0
+order_items,315143,0,0.0
+orders,163200,3200,1.9608
+payments,168111,3296,1.9606
+products,3200,0,0.0
+returns,16048,0,0.0
+sellers,420,0,0.0
+shipping,151228,0,0.0

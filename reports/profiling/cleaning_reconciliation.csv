@@ -1,0 +1,10 @@
+source_filename,input_row_count,cleaned_output_row_count,exact_duplicate_rows_flagged,rows_with_missing_values_flagged,rows_with_invalid_values_flagged,orphan_reference_rows_flagged,quarantine_copy_count,unexplained_row_count_difference,preservation_status
+locations.csv,650,650,0,0,0,0,0,0,100% PRESERVED (ZERO DATA LOSS)
+customers.csv,45000,45000,0,0,461,0,461,0,100% PRESERVED (ZERO DATA LOSS)
+sellers.csv,420,420,0,0,15,0,14,0,100% PRESERVED (ZERO DATA LOSS)
+products.csv,3200,3200,0,0,105,0,105,0,100% PRESERVED (ZERO DATA LOSS)
+orders.csv,163200,163200,6400,0,5347,330,11835,0,100% PRESERVED (ZERO DATA LOSS)
+order_items.csv,315143,315143,0,0,0,932,1238,0,100% PRESERVED (ZERO DATA LOSS)
+payments.csv,168111,168111,6592,0,5964,0,12305,0,100% PRESERVED (ZERO DATA LOSS)
+shipping.csv,151228,151228,0,0,2101,0,2097,0,100% PRESERVED (ZERO DATA LOSS)
+returns.csv,16048,16048,0,0,564,139,697,0,100% PRESERVED (ZERO DATA LOSS)
