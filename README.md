@@ -45,9 +45,9 @@ This project addresses that challenge by turning nine raw source files into a cl
 |---|---|---|
 | **Syed Danish Ahmed** | Database | Database design, SQL scripts and data storage |
 | **Shahzaib** | Data Cleaning | Data profiling, cleaning, standardization and transformation |
-| **Sameer** | Power BI | Dashboard development and business reporting |
+| **Sameer** | Power BI | 	Power BI data source connection and report setup |
 
-**University:** _Your University_
+**University:** _UIT University_ _Institute of Business Management_ _DHA Suffa University_
 
 ---
 
